@@ -1,0 +1,155 @@
+﻿<Page x:Class="WPFSHOOL.Viwes.Pages.Settings_Page"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:WPFSHOOL.Core"
+      mc:Ignorable="d" 
+      d:DesignHeight="430" d:DesignWidth="800"
+      Title="Настройки"
+      
+      
+      xmlns:svgc="http://sharpvectors.codeplex.com/svgc/"
+      >
+
+    <Page.DataContext>
+        <local:BildingTextLanguage/>
+    </Page.DataContext>
+
+    <Border>
+        <Grid>
+            <Border Background="#363736"
+                    HorizontalAlignment="Stretch"
+                    VerticalAlignment="Stretch" 
+                    CornerRadius="0, 0, 10, 10"/>
+            <Label
+                Margin="10"
+                Content="{Binding Settings_Text}"
+                x:Name="Btn_Settings_Text"
+                Foreground="#fff"
+                FontSize="40"
+                FontWeight="Bold"
+                VerticalAlignment="Bottom">
+            </Label>
+
+
+            <!---->
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+
+                <StackPanel Grid.Column="4"
+                Orientation="Horizontal"
+                HorizontalAlignment="Right">
+                    <Button
+                        Style="{DynamicResource BtnNav}"
+                        Margin= "0, 10, 10, 0"
+                        Background="#0000"
+                        BorderBrush="#0000"
+                        Width="30"
+                        Height="30"
+                        Cursor="Hand"
+                        Click="home_Button_Click"
+                        VerticalAlignment="Top"
+                        HorizontalAlignment="Right">
+                        
+                            <svgc:SvgViewbox Margin="0, 0, 0, 0"
+                                VerticalAlignment="Center"
+                                HorizontalAlignment="Right"
+                                Source="pack://application:,,,/Viwes/Resurces/Images/home.svg">
+                            </svgc:SvgViewbox>
+                        
+                    </Button>
+
+                </StackPanel>
+
+            </Grid>
+            <!---->
+
+
+
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+                <StackPanel
+                    Grid.Row="1"
+                    Grid.Column="1"
+                    Orientation="Vertical"
+                    VerticalAlignment="Center"
+                    HorizontalAlignment="Center">
+
+                    <StackPanel
+                        Orientation="Horizontal"
+                        VerticalAlignment="Center"
+                        HorizontalAlignment="Center">
+
+                        <Button
+                            Style="{DynamicResource BtnNav}"
+                            Margin= "0, 10, 10, 0"
+                            Background="#0000"
+                            BorderBrush="#0000"
+                            Width="30"
+                            Height="30"
+                            Cursor="Hand"
+                            Click="Flag_RU_Button_Click"
+                            VerticalAlignment="Top"
+                            HorizontalAlignment="Center">
+
+                            <svgc:SvgViewbox Margin="0, 0, 0, 0"
+                                VerticalAlignment="Center"
+                                HorizontalAlignment="Right"
+                                Source="pack://application:,,,/Viwes/Resurces/Images/Flag-RU.svg">
+                            </svgc:SvgViewbox>
+
+                        </Button>
+
+                        <Button
+                            Style="{DynamicResource BtnNav}"
+                            Margin= "0, 10, 10, 0"
+                            Background="#0000"
+                            BorderBrush="#0000"
+                            Width="30"
+                            Height="30"
+                            Cursor="Hand"
+                            Click="Flag_UE_Button_Click"
+                            VerticalAlignment="Top"
+                            HorizontalAlignment="Center">
+
+                            <svgc:SvgViewbox Margin="0, 0, 0, 0"
+                                VerticalAlignment="Center"
+                                HorizontalAlignment="Right"
+                                Source="pack://application:,,,/Viwes/Resurces/Images/Flag-UE.svg">
+                            </svgc:SvgViewbox>
+
+                        </Button>
+
+
+                    </StackPanel>
+
+
+                    <CheckBox Content="{Binding ResizeMode_Text}"
+                              Name="ResizeMode_CheckBox"
+                              Foreground="#fff"
+                              FontSize="20"
+                              Checked="ResizeMode_CheckBox_Checked"
+                              Unchecked="ResizeMode_CheckBox_Unchecked">
+                    </CheckBox>
+                </StackPanel>
+            </Grid>
+            
+        </Grid>
+    </Border>
+</Page>

@@ -1,0 +1,61 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UseWPF>true</UseWPF>
+    <AssemblyName>WpfApp</AssemblyName>
+    <RootNamespace>WpfApp</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Viwes\Resurces\Images\Exit.svg" />
+    <None Remove="Viwes\Resurces\Images\Flag-RU.svg" />
+    <None Remove="Viwes\Resurces\Images\Flag-UE.svg" />
+    <None Remove="Viwes\Resurces\Images\folding.svg" />
+    <None Remove="Viwes\Resurces\Images\github.svg" />
+    <None Remove="Viwes\Resurces\Images\home.svg" />
+    <None Remove="Viwes\Resurces\Images\left_arrow.svg" />
+    <None Remove="Viwes\Resurces\Images\profile.svg" />
+    <None Remove="Viwes\Resurces\Images\right_arrow.svg" />
+    <None Remove="Viwes\Resurces\Images\settings.svg" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <COMReference Include="{d37e2a3e-8545-3a39-9f4f-31827c9124ab}">
+      <WrapperTool>tlbimp</WrapperTool>
+      <VersionMinor>4</VersionMinor>
+      <VersionMajor>2</VersionMajor>
+      <Guid>d37e2a3e-8545-3a39-9f4f-31827c9124ab</Guid>
+    </COMReference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Viwes\Resurces\Images\Flag-RU.svg" />
+    <Resource Include="Viwes\Resurces\Images\Flag-UE.svg" />
+    <Resource Include="Viwes\Resurces\Images\github.svg" />
+    <Resource Include="Viwes\Resurces\Images\home.svg" />
+    <Resource Include="Viwes\Resurces\Images\settings.svg" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Models\" />
+    <Folder Include="ViewModels\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
+    <PackageReference Include="SharpVectors" Version="1.8.4.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Viwes\Resurces\Images\Exit.svg" />
+    <Resource Include="Viwes\Resurces\Images\folding.svg" />
+    <Resource Include="Viwes\Resurces\Images\left_arrow.svg" />
+    <Resource Include="Viwes\Resurces\Images\profile.svg" />
+    <Resource Include="Viwes\Resurces\Images\right_arrow.svg" />
+  </ItemGroup>
+
+</Project>
