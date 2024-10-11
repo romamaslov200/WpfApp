@@ -14,10 +14,10 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
-using WPFSHOOL.Core;
+using WpfApp.Core;
 using System.Text.Json;
 
-namespace WPFSHOOL.Viwes.Pages
+namespace WpfApp.Viwes.Pages
 {
     /// <summary>
     /// Логика взаимодействия для Settings_Page.xaml

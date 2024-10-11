@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.ComponentModel;
 
-namespace WPFSHOOL.Core
+namespace WpfApp.Core
 {
     class BildingTextLanguage : INotifyPropertyChanged
     {

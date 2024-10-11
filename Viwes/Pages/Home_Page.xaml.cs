@@ -12,9 +12,9 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
-using WPFSHOOL.Core;
+using WpfApp.Core;
 
-namespace WPFSHOOL.Viwes.Pages
+namespace WpfApp.Viwes.Pages
 {
     /// <summary>
     /// Логика взаимодействия для Home_Page.xaml

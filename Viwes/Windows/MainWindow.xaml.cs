@@ -9,10 +9,10 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
-using WPFSHOOL.Core;
-using WPFSHOOL.Viwes.Pages;
+using WpfApp.Core;
+using WpfApp.Viwes.Pages;
 
-namespace WPFSHOOL
+namespace WpfApp
 {
     /// <summary>
     /// Interaction logic for MainWindow.xaml
